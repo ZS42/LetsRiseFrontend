@@ -14,7 +14,9 @@ export default {
   },
   methods: {
     applyForRole() {
-      alert(`You have applied for the role: ${this.title}`);
+      console.log('Apply button clicked', this.title);
+      // Emit an event to the parent component with the role title
+      this.$emit('apply', { title: this.title, description: this.description});
     }
   }
 };
