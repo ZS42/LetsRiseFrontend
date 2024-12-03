@@ -44,54 +44,42 @@ export default {
       // Use the imported mock data here
       recommendedRoles,
       isFormVisible: false,
-      isApplying: false, // New property to control visibility
+      isApplying: false,
       selectedRole: ''
     };
   },
   methods: {
     showForm(role) {
-      this.selectedRole = role;  // Store the role that is being applied for
-      this.isFormVisible = true; // Show the application form
-      this.isApplying = true; // Hide the role cards
+      this.selectedRole = role;  
+      this.isFormVisible = true; 
+      this.isApplying = true;
     },
     hideForm() {
-      this.isFormVisible = false; // Hide the application form when canceled
-      this.isApplying = false; // Show the role cards again
+      this.isFormVisible = false;
+      this.isApplying = false;
     }
   }
 };
 </script>
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; 
-}
-#app {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
+<style scoped>
+
 .app-header {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #3f3f3f; /* Header background color */
+  background-color: #3f3f3f;
   color: white;
   position: fixed;
   top: 0;
   z-index: 1000; /* Ensures it stays on top during scroll */
   width: 100vw;
-  max-width: 100%; /* Explicitly set full width */
+  max-width: 100%;
 }
 .app-header-content {
-  width: 100%; /* Make it as wide as the parent */
-  max-width: 1200px; /* Optional: limit max content width */
-  padding: 10px 20px; /* Add padding inside the content box */
+  width: 100%;
+  max-width: 1200px; 
+  padding: 10px 20px;
 }
 .logo {
   height: 50px;
@@ -116,16 +104,16 @@ h1 {
 .dashboard {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #FF4D85, #5D3FD3); /* Apply gradient */
-  min-height: 100vh; /* Ensures the background covers the entire viewport */
-  width: 100vw; /* Full viewport width */
+  background: linear-gradient(to bottom, #FF4D85, #5D3FD3);
+  min-height: 100vh;
+  width: 100vw;
   margin: 0;
   box-sizing: border-box;
-  color: white; /* Adjust text color for readability on the gradient */
+  color: white;
   display: flex;
   flex-direction: column; /* Ensure proper layout for children */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: center; 
+  align-items: center;
   overflow-x: hidden; 
 }
 

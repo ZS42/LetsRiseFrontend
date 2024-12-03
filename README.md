@@ -1,5 +1,18 @@
-# Vue 3 + Vite
+# Dependencies
+brew install node (on mac)
+install NodeJS from website (windows)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# tocheck if installed properly
+ node -v (gives v23.3.0)
+npm -v (gives 10.9.0)
+# clone in your terminal
+git clone https://github.com/ZS42/LetsRiseFrontend.git
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# after pulling from github to get all the things in gitignore do
+npm install
+
+# to start the server
+npm run dev 
+
+# on your browser
+http://localhost:5173/
