@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <header class="app-header">
-      <img src="./assets/Let's Rise logo.png" alt="Company Logo" class="logo" />
+      <img src="./assets/LetsRiseLogo.png" alt="Company Logo" class="logo" />
     </header>
     <div class="dashboard">
       <h1 v-if="!isFormVisible">Student Dashboard</h1>
@@ -113,7 +113,7 @@ h1 {
   display: flex;
   flex-direction: column; /* Ensure proper layout for children */
   justify-content: center; 
-  align-items: center;
+  align-items: center; 
   overflow-x: hidden; 
 }
 
