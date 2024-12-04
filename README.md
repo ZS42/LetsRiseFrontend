@@ -8,6 +8,9 @@ npm -v (gives 10.9.0)
 # clone in your terminal
 git clone https://github.com/ZS42/LetsRiseFrontend.git
 
+# navigate into your app folder
+cd Lets-Rise-app 
+
 # after pulling from github to get all the things in gitignore do
 npm install
 
